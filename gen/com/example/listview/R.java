@@ -27,17 +27,23 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f090007;
-        public static final int btnpage1=0x7f090001;
-        public static final int btnpage2=0x7f090002;
-        public static final int btnpage3=0x7f090003;
-        public static final int list=0x7f090006;
-        public static final int mylinear=0x7f090000;
-        public static final int text1=0x7f090005;
-        public static final int textView1=0x7f090004;
+        public static final int action_settings=0x7f09000a;
+        public static final int btn=0x7f090009;
+        public static final int btn1=0x7f090004;
+        public static final int btn2=0x7f090005;
+        public static final int btn3=0x7f090006;
+        public static final int fraglist=0x7f090001;
+        public static final int fragmentlist=0x7f090003;
+        public static final int img=0x7f090007;
+        public static final int list=0x7f090002;
+        public static final int tab1=0x7f090000;
+        public static final int text=0x7f090008;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int fragment_list=0x7f030001;
+        public static final int fragment_tab=0x7f030002;
+        public static final int icontext=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f080000;

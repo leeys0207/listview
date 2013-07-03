@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -6,43 +7,21 @@
 	android:background="#ffffff"
     tools:context=".MainActivity" >
     
-	<LinearLayout
-	    android:id="@+id/mylinear"
-	    android:orientation="horizontal"
-	    android:layout_width="fill_parent"
+	<FrameLayout
+	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content">
-	    <Button
-	        android:id="@+id/btnpage1"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text="A" 
-	        android:layout_weight="1"/>
-	    <Button 
-	        android:id="@+id/btnpage2"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text="B" 
-	        android:layout_weight="1" />
-	    <Button
-	        android:id="@+id/btnpage3"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text="C" 
-	        android:layout_weight="1" />
-	</LinearLayout>
-	
-    
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-    
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Touch A Button!" />
+	    
+	    <fragment class="com.example.listview.FragmentTabs"
+	            android:id="@+id/tab1"
+	            android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content" />
+	    
+	    <fragment class="com.example.listview.FragmentList"
+	            android:id="@+id/fraglist"
+	            android:layout_width="fill_parent" 
+	            android:layout_height="wrap_content" />
+	    
+	</FrameLayout>
 
     <ListView 
         android:id="@+id/list"
